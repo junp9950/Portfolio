@@ -22,6 +22,17 @@
       "status": "진행중",
       "date": "2024-02"
     }
+    {
+      "id": 3,
+      "title": "테스트,
+      "description": "포폴테스트",
+      "technologies": ["치킨", "족발", "회"],
+      "github": "https://github.com/username/todo-app",
+      "demo": "https://username.github.io/todo-app",
+      "image": "https://via.placeholder.com/300x200",
+      "status": "완료",
+      "date": "2024-01"
+    },
   ],
   "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"],
   "contact": {
