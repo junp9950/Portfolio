@@ -42,7 +42,9 @@ if (!fs.existsSync('src')) {
 }
 
 // 템플릿 변수 교체
+// 템플릿 변수 교체
 let html = template
+    .replace(/\{\{name\}\}/g, 'junp9950')  // ← 이 줄 추가!
     .replace('{{updateDate}}', new Date().toLocaleDateString('ko-KR'))
     .replace('{{projectCount}}', projectsData.projects.length)
     .replace('{{projects}}', generateProjectsHTML(projectsData.projects))
