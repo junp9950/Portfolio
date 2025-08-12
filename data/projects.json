@@ -2,42 +2,20 @@
   "projects": [
     {
       "id": 1,
-      "title": "할일 관리 앱",
-      "description": "React로 만든 간단한 TODO 앱",
-      "technologies": ["React", "CSS", "LocalStorage"],
-      "github": "https://github.com/username/todo-app",
-      "demo": "https://username.github.io/todo-app",
+      "title": "첫 번째 프로젝트",
+      "description": "프로젝트 설명을 여기에 작성하세요",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "github": "https://github.com/junp9950/project1",
+      "demo": "https://junp9950.github.io/project1",
       "image": "https://via.placeholder.com/300x200",
       "status": "완료",
-      "date": "2024-01"
-    },
-    {
-      "id": 2,
-      "title": "날씨 앱",
-      "description": "OpenWeather API를 사용한 날씨 정보 앱",
-      "technologies": ["HTML", "JavaScript", "API"],
-      "github": "https://github.com/username/weather-app",
-      "demo": "https://username.github.io/weather-app",
-      "image": "https://via.placeholder.com/300x200",
-      "status": "진행중",
-      "date": "2024-02"
-    },
-    {
-      "id": 3,
-      "title": "음식",
-      "description": "포폴테스트",
-      "technologies": ["치킨", "족발", "회"],
-      "github": "https://github.com/username/todo-app",
-      "demo": "https://username.github.io/todo-app",
-      "image": "https://via.placeholder.com/300x200",
-      "status": "완료",
-      "date": "2024-01"
-    },
+      "date": "2024-08"
+    }
   ],
-  "skills": ["HTML", "CSS", "JavaScript", "React", "Node.js"],
+  "skills": ["HTML", "CSS", "JavaScript", "React"],
   "contact": {
     "email": "your@email.com",
-    "github": "https://github.com/username",
-    "linkedin": "https://linkedin.com/in/username"
+    "github": "https://github.com/junp9950",
+    "linkedin": "https://linkedin.com/in/yourname"
   }
 }
