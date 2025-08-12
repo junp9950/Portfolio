@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{name}}의 포트폴리오</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>{{name}}의 포트폴리오</h1>
+        <p>마지막 업데이트: {{updateDate}}</p>
+    </header>
+
+    <section id="projects">
+        <h2>프로젝트 ({{projectCount}}개)</h2>
+        <div class="project-grid">
+            {{projects}}
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>기술 스택</h2>
+        <div class="skills-list">
+            {{skills}}
+        </div>
+    </section>
+
+    <footer>
+        <div class="contact">
+            {{contact}}
+        </div>
+    </footer>
+</body>
+</html>
