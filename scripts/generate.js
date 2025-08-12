@@ -9,7 +9,6 @@ const template = fs.readFileSync('templates/index.html', 'utf8');
 function generateProjectsHTML(projects) {
     return projects.map(project => `
         <div class="project-card">
-            <img src="${project.image}" alt="${project.title}">
             <h3>${project.title}</h3>
             <p>${project.description}</p>
             <div class="tech-tags">
@@ -19,7 +18,6 @@ function generateProjectsHTML(projects) {
                 <a href="${project.github}" target="_blank">GitHub</a>
                 <a href="${project.demo}" target="_blank">데모</a>
             </div>
-            <div class="project-status">상태: ${project.status}</div>
         </div>
     `).join('');
 }
@@ -34,13 +32,17 @@ function generateContactHTML(contact) {
     return `
         <a href="mailto:${contact.email}">이메일</a>
         <a href="${contact.github}" target="_blank">GitHub</a>
-        <a href="${contact.linkedin}" target="_blank">LinkedIn</a>
     `;
+}
+
+// src 폴더가 없으면 생성 (중요한 부분!)
+if (!fs.existsSync('src')) {
+    fs.mkdirSync('src', { recursive: true });
+    console.log('📁 src 폴더를 생성했습니다.');
 }
 
 // 템플릿 변수 교체
 let html = template
-    .replace('{{name}}', '홍길동') // 여기에 본인 이름 입력
     .replace('{{updateDate}}', new Date().toLocaleDateString('ko-KR'))
     .replace('{{projectCount}}', projectsData.projects.length)
     .replace('{{projects}}', generateProjectsHTML(projectsData.projects))
@@ -50,3 +52,4 @@ let html = template
 // 최종 HTML 파일 생성
 fs.writeFileSync('src/index.html', html);
 console.log('✅ 포트폴리오가 성공적으로 생성되었습니다!');
+console.log('📍 파일 위치: src/index.html');
