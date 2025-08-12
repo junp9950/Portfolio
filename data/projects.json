@@ -24,7 +24,7 @@
     }
     {
       "id": 3,
-      "title": "테스트,
+      "title": "테스트",
       "description": "포폴테스트",
       "technologies": ["치킨", "족발", "회"],
       "github": "https://github.com/username/todo-app",
