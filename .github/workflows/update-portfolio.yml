@@ -1,5 +1,10 @@
 name: 포트폴리오 자동 업데이트
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+  
 on:
   push:
     branches: [ main ]
